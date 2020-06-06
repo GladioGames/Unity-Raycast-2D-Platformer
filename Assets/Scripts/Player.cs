@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
         {
             //Jump
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
-           //rb2d.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+            //rb2d.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
         
         }
         //Reset the jump input
@@ -189,22 +189,6 @@ public class Player : MonoBehaviour
             //Change the color of the ray for debug purpose
             rayColor = Color.green;
         }
-        //RaycastHit2D[] hitsLeft = new RaycastHit2D[1];
-        //int leftCount = Physics2D.Raycast(startPositionLeft, Vector2.down, filter2D, hitsLeft, laserLength);
-        ////Check if the right laser hits something
-        //RaycastHit2D[] hitsRight = new RaycastHit2D[1];
-        //int rightCount = Physics2D.Raycast(startPositionRight, Vector2.down, filter2D, hitsRight, laserLength);
-
-        //Collider2D col2DHit = null;
-        ////If one of the lasers hits the floor
-        //if ((leftCount > 0 && hitsLeft[0].collider != null) || (rightCount > 0 && hitsRight[0].collider != null))
-        //{
-
-        //    //Get the object hits collider
-        //    col2DHit = (leftCount > 0 && hitsLeft[0].collider != null) ? hitsLeft[0].collider : hitsRight[0].collider;
-        //    //Change the color of the ray for debug purpose
-        //    rayColor = Color.green;
-        //}
         //Draw the ray for debug purpose
         Debug.DrawRay(startPositionLeft, Vector2.down * laserLength, rayColor);
         Debug.DrawRay(startPositionRight, Vector2.down * laserLength, rayColor);
