@@ -4,6 +4,8 @@ Raycast 2D Platformer is a simple project made in Unity.
 It contains an example of cloud platforms management using the Unity Raycast 2D.
 The goal is to explain with an example how the Raycast 2D works in Unity simulating a simple game.
 
+![](https://media.giphy.com/media/W1NTOCvxdtfAhLwtKE/giphy.gif)
+
 ### Installation
 
 Raycast 2D Platformer is made with [Unity](https://unity.com/) v2019.3.13f1.
